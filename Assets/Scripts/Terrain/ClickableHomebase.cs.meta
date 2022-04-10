@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5aa8e12636c965440bd85d15e1e232f8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - defaultMaterial: {instanceID: 0}
+  - highlightMaterial: {instanceID: 0}
+  - buildMenuPrefab: {fileID: 8360130553535019581, guid: 1b1a17ed1e4a95a4f92336eed16ce6a0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
