@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BotLogic : AbstractPlayerLogic
 {
-    public GameObject minionPrefab;
+    public GameObject[] minionPrefabs;
+    public int spawnsPerTurn = 5;
 
     TurnManager turnManager;
 
@@ -22,9 +23,12 @@ public class BotLogic : AbstractPlayerLogic
         ClickableHomebase targetHomebase = target.GetComponent<ClickableHomebase>();
         MinionSpawner minionSpawner = GetComponent<MinionSpawner>();
         //minionPrefab.GetComponent<MinionStats>().owner = gameObject.name;
-        minionSpawner.spawningQueue.Add(new MinionSpawner.MinionSpawnDto(minionPrefab, targetHomebase.transform));
-        minionSpawner.spawningQueue.Add(new MinionSpawner.MinionSpawnDto(minionPrefab, targetHomebase.transform));
-        minionSpawner.spawningQueue.Add(new MinionSpawner.MinionSpawnDto(minionPrefab, targetHomebase.transform));
+
+        for (int i = 0; i < spawnsPerTurn; i++)
+        {
+            int prefabIndex = Random.Range(0, minionPrefabs.Length);
+            minionSpawner.spawningQueue.Add(new MinionSpawner.MinionSpawnDto(minionPrefabs[prefabIndex], targetHomebase.transform));
+        }
         finishedTurn = true;
         canAct = false;
     }

@@ -6,7 +6,6 @@ public class MinigunTowerShoot : BaseTowerShoot
 {
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
-    public string owner;
 
     private float fireCooldown = 0;
     private TurnManager turnManager;

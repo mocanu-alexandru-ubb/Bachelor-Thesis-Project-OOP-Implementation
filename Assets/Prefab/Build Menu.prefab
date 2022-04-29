@@ -2190,7 +2190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858c78fe8defff944a03cd532e825bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 8008982962089959010, guid: ae198f48b055afa4796e49b6358cb862, type: 3}
+  towerPrefab: {fileID: 8008982962089959010, guid: da0a5cd5e9ba0bd43a9c1f73d37ea417, type: 3}
   towerTileMaterial: {fileID: 2100000, guid: 8332543509e51b94bb533809e512e0ce, type: 2}
   friendsPanelManager: {fileID: 1870773678976497844}
 --- !u!225 &3422416915102412470

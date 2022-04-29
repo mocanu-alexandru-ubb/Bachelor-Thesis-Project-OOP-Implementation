@@ -6,6 +6,8 @@ using UnityEngine;
 public class BasicBulletFollow : MonoBehaviour
 {
     public float speed = 15;
+    public GameObject bulletPatriclesPrefab;
+
     private Transform target;
     private int damage;
 
@@ -41,6 +43,8 @@ public class BasicBulletFollow : MonoBehaviour
         {
             enemyStats.takeDamage(damage);
         }
+        GameObject effectInstance = Instantiate(bulletPatriclesPrefab, transform.position, transform.rotation);
+        Destroy(effectInstance, 5f);
         Destroy(gameObject);
     }
 }

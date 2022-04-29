@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class HomeBaseEnemyCollision : MonoBehaviour
 {
-    public int health { get; private set; } = 20;
+    public int health = 20;
     //public TextMeshProUGUI text;
 
     private void OnTriggerEnter(Collider other)

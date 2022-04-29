@@ -94,3 +94,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3924869acd39dc447a4abee8261eabf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 15
+  bulletPatriclesPrefab: {fileID: 8303722609137024091, guid: 6761e4d97629c8e46b5fdbe30df00e4e, type: 3}
